@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Lo-Fi Cloud Hopper ♫ ☁️</title>
+  <link rel="stylesheet" href="./src/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐱</text></svg>">
+</head>
+<body>
+  <!-- Fullscreen Pixel Canvas -->
+  <canvas id="gameCanvas"></canvas>
+
+  <!-- Floating Glassmorphism Controls -->
+  <div class="floating-controls">
+    <button id="trackBtn" class="icon-btn" title="Cycle Lo-Fi Track">
+      🎵 <span>Midnight Rain</span>
+    </button>
+    <button id="ambianceBtn" class="icon-btn" title="Weather & Sky Atmosphere (O)">
+      ☕ <span>Ambiance</span>
+    </button>
+    <button id="wardrobeBtn" class="icon-btn" title="Kitty Hat Wardrobe (H)">
+      👒 <span>Hats</span>
+    </button>
+    <button id="muteBtn" class="icon-btn" title="Toggle Sound">
+      🔊
+    </button>
+    <button id="fullscreenBtn" class="icon-btn" title="Toggle Fullscreen">
+      ⛶ <span>Fullscreen</span>
+    </button>
+  </div>
+
+  <!-- Bottom Key Hints -->
+  <div class="bottom-hints">
+    [A / D] Move • [Space] Jump • [Hold Space] Glide 🍃 • [Shift] Dash • [H] Hats • [O] Ambiance • [P] Pause
+  </div>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast"></div>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
